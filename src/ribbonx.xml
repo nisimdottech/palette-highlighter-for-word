@@ -1,352 +1,352 @@
-<customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui" onLoad="Ribbon_Load">
+<customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui" onLoad="PaletteHighlighter_Load">
   <ribbon>
     <tabs>
       <tab id="tabPaletteHighlighter" label="Highlighter">
         <group id="grp01">
           <box id="grid01" boxStyle="vertical">
             <box id="row01_1" boxStyle="horizontal">
-              <toggleButton id="btn01_01" image="c01_01" showLabel="false" tag="253,235,170" screentip="Yellow — Lightest" supertip="#FDEBAA | RGB 253, 235, 170 | Color 01 | Shade 01" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn01_02" image="c01_02" showLabel="false" tag="232,208,117" screentip="Yellow — Very Light" supertip="#E8D075 | RGB 232, 208, 117 | Color 01 | Shade 02" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn01_03" image="c01_03" showLabel="false" tag="213,182,51" screentip="Yellow — Light" supertip="#D5B633 | RGB 213, 182, 51 | Color 01 | Shade 03" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
+              <toggleButton id="btn01_01" image="c01_01" showLabel="false" tag="253,235,170" screentip="Yellow — Lightest" supertip="#FDEBAA | RGB 253, 235, 170 | Color 01 | Shade 01" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn01_02" image="c01_02" showLabel="false" tag="232,208,117" screentip="Yellow — Very Light" supertip="#E8D075 | RGB 232, 208, 117 | Color 01 | Shade 02" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn01_03" image="c01_03" showLabel="false" tag="213,182,51" screentip="Yellow — Light" supertip="#D5B633 | RGB 213, 182, 51 | Color 01 | Shade 03" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
             </box>
             <box id="row01_2" boxStyle="horizontal">
-              <toggleButton id="btn01_04" image="c01_04" showLabel="false" tag="187,156,0" screentip="Yellow — Soft" supertip="#BB9C00 | RGB 187, 156, 0 | Color 01 | Shade 04" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn01_05" image="c01_05" showLabel="false" tag="158,132,0" screentip="Yellow — Medium" supertip="#9E8400 | RGB 158, 132, 0 | Color 01 | Shade 05" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn01_06" image="c01_06" showLabel="false" tag="131,109,0" screentip="Yellow — Rich" supertip="#836D00 | RGB 131, 109, 0 | Color 01 | Shade 06" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
+              <toggleButton id="btn01_04" image="c01_04" showLabel="false" tag="187,156,0" screentip="Yellow — Soft" supertip="#BB9C00 | RGB 187, 156, 0 | Color 01 | Shade 04" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn01_05" image="c01_05" showLabel="false" tag="158,132,0" screentip="Yellow — Medium" supertip="#9E8400 | RGB 158, 132, 0 | Color 01 | Shade 05" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn01_06" image="c01_06" showLabel="false" tag="131,109,0" screentip="Yellow — Rich" supertip="#836D00 | RGB 131, 109, 0 | Color 01 | Shade 06" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
             </box>
             <box id="row01_3" boxStyle="horizontal">
-              <toggleButton id="btn01_07" image="c01_07" showLabel="false" tag="105,87,0" screentip="Yellow — Deep" supertip="#695700 | RGB 105, 87, 0 | Color 01 | Shade 07" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn01_08" image="c01_08" showLabel="false" tag="79,65,0" screentip="Yellow — Dark" supertip="#4F4100 | RGB 79, 65, 0 | Color 01 | Shade 08" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn01_09" image="c01_09" showLabel="false" tag="56,45,0" screentip="Yellow — Darkest" supertip="#382D00 | RGB 56, 45, 0 | Color 01 | Shade 09" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
+              <toggleButton id="btn01_07" image="c01_07" showLabel="false" tag="105,87,0" screentip="Yellow — Deep" supertip="#695700 | RGB 105, 87, 0 | Color 01 | Shade 07" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn01_08" image="c01_08" showLabel="false" tag="79,65,0" screentip="Yellow — Dark" supertip="#4F4100 | RGB 79, 65, 0 | Color 01 | Shade 08" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn01_09" image="c01_09" showLabel="false" tag="56,45,0" screentip="Yellow — Darkest" supertip="#382D00 | RGB 56, 45, 0 | Color 01 | Shade 09" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
             </box>
           </box>
         </group>
         <group id="grp02">
           <box id="grid02" boxStyle="vertical">
             <box id="row02_1" boxStyle="horizontal">
-              <toggleButton id="btn02_01" image="c02_01" showLabel="false" tag="233,243,177" screentip="Lime — Lightest" supertip="#E9F3B1 | RGB 233, 243, 177 | Color 02 | Shade 01" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn02_02" image="c02_02" showLabel="false" tag="206,218,128" screentip="Lime — Very Light" supertip="#CEDA80 | RGB 206, 218, 128 | Color 02 | Shade 02" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn02_03" image="c02_03" showLabel="false" tag="181,194,72" screentip="Lime — Light" supertip="#B5C248 | RGB 181, 194, 72 | Color 02 | Shade 03" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
+              <toggleButton id="btn02_01" image="c02_01" showLabel="false" tag="233,243,177" screentip="Lime — Lightest" supertip="#E9F3B1 | RGB 233, 243, 177 | Color 02 | Shade 01" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn02_02" image="c02_02" showLabel="false" tag="206,218,128" screentip="Lime — Very Light" supertip="#CEDA80 | RGB 206, 218, 128 | Color 02 | Shade 02" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn02_03" image="c02_03" showLabel="false" tag="181,194,72" screentip="Lime — Light" supertip="#B5C248 | RGB 181, 194, 72 | Color 02 | Shade 03" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
             </box>
             <box id="row02_2" boxStyle="horizontal">
-              <toggleButton id="btn02_04" image="c02_04" showLabel="false" tag="156,169,0" screentip="Lime — Soft" supertip="#9CA900 | RGB 156, 169, 0 | Color 02 | Shade 04" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn02_05" image="c02_05" showLabel="false" tag="132,143,0" screentip="Lime — Medium" supertip="#848F00 | RGB 132, 143, 0 | Color 02 | Shade 05" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn02_06" image="c02_06" showLabel="false" tag="109,118,0" screentip="Lime — Rich" supertip="#6D7600 | RGB 109, 118, 0 | Color 02 | Shade 06" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
+              <toggleButton id="btn02_04" image="c02_04" showLabel="false" tag="156,169,0" screentip="Lime — Soft" supertip="#9CA900 | RGB 156, 169, 0 | Color 02 | Shade 04" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn02_05" image="c02_05" showLabel="false" tag="132,143,0" screentip="Lime — Medium" supertip="#848F00 | RGB 132, 143, 0 | Color 02 | Shade 05" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn02_06" image="c02_06" showLabel="false" tag="109,118,0" screentip="Lime — Rich" supertip="#6D7600 | RGB 109, 118, 0 | Color 02 | Shade 06" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
             </box>
             <box id="row02_3" boxStyle="horizontal">
-              <toggleButton id="btn02_07" image="c02_07" showLabel="false" tag="87,94,0" screentip="Lime — Deep" supertip="#575E00 | RGB 87, 94, 0 | Color 02 | Shade 07" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn02_08" image="c02_08" showLabel="false" tag="65,71,0" screentip="Lime — Dark" supertip="#414700 | RGB 65, 71, 0 | Color 02 | Shade 08" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn02_09" image="c02_09" showLabel="false" tag="45,49,0" screentip="Lime — Darkest" supertip="#2D3100 | RGB 45, 49, 0 | Color 02 | Shade 09" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
+              <toggleButton id="btn02_07" image="c02_07" showLabel="false" tag="87,94,0" screentip="Lime — Deep" supertip="#575E00 | RGB 87, 94, 0 | Color 02 | Shade 07" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn02_08" image="c02_08" showLabel="false" tag="65,71,0" screentip="Lime — Dark" supertip="#414700 | RGB 65, 71, 0 | Color 02 | Shade 08" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn02_09" image="c02_09" showLabel="false" tag="45,49,0" screentip="Lime — Darkest" supertip="#2D3100 | RGB 45, 49, 0 | Color 02 | Shade 09" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
             </box>
           </box>
         </group>
         <group id="grp03">
           <box id="grid03" boxStyle="vertical">
             <box id="row03_1" boxStyle="horizontal">
-              <toggleButton id="btn03_01" image="c03_01" showLabel="false" tag="211,249,191" screentip="Yellow Green — Lightest" supertip="#D3F9BF | RGB 211, 249, 191 | Color 03 | Shade 01" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn03_02" image="c03_02" showLabel="false" tag="176,226,149" screentip="Yellow Green — Very Light" supertip="#B0E295 | RGB 176, 226, 149 | Color 03 | Shade 02" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn03_03" image="c03_03" showLabel="false" tag="142,204,105" screentip="Yellow Green — Light" supertip="#8ECC69 | RGB 142, 204, 105 | Color 03 | Shade 03" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
+              <toggleButton id="btn03_01" image="c03_01" showLabel="false" tag="211,249,191" screentip="Yellow Green — Lightest" supertip="#D3F9BF | RGB 211, 249, 191 | Color 03 | Shade 01" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn03_02" image="c03_02" showLabel="false" tag="176,226,149" screentip="Yellow Green — Very Light" supertip="#B0E295 | RGB 176, 226, 149 | Color 03 | Shade 02" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn03_03" image="c03_03" showLabel="false" tag="142,204,105" screentip="Yellow Green — Light" supertip="#8ECC69 | RGB 142, 204, 105 | Color 03 | Shade 03" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
             </box>
             <box id="row03_2" boxStyle="horizontal">
-              <toggleButton id="btn03_04" image="c03_04" showLabel="false" tag="111,180,64" screentip="Yellow Green — Soft" supertip="#6FB440 | RGB 111, 180, 64 | Color 03 | Shade 04" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn03_05" image="c03_05" showLabel="false" tag="83,156,18" screentip="Yellow Green — Medium" supertip="#539C12 | RGB 83, 156, 18 | Color 03 | Shade 05" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn03_06" image="c03_06" showLabel="false" tag="66,129,0" screentip="Yellow Green — Rich" supertip="#428100 | RGB 66, 129, 0 | Color 03 | Shade 06" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
+              <toggleButton id="btn03_04" image="c03_04" showLabel="false" tag="111,180,64" screentip="Yellow Green — Soft" supertip="#6FB440 | RGB 111, 180, 64 | Color 03 | Shade 04" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn03_05" image="c03_05" showLabel="false" tag="83,156,18" screentip="Yellow Green — Medium" supertip="#539C12 | RGB 83, 156, 18 | Color 03 | Shade 05" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn03_06" image="c03_06" showLabel="false" tag="66,129,0" screentip="Yellow Green — Rich" supertip="#428100 | RGB 66, 129, 0 | Color 03 | Shade 06" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
             </box>
             <box id="row03_3" boxStyle="horizontal">
-              <toggleButton id="btn03_07" image="c03_07" showLabel="false" tag="51,103,0" screentip="Yellow Green — Deep" supertip="#336700 | RGB 51, 103, 0 | Color 03 | Shade 07" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn03_08" image="c03_08" showLabel="false" tag="37,78,0" screentip="Yellow Green — Dark" supertip="#254E00 | RGB 37, 78, 0 | Color 03 | Shade 08" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn03_09" image="c03_09" showLabel="false" tag="24,55,0" screentip="Yellow Green — Darkest" supertip="#183700 | RGB 24, 55, 0 | Color 03 | Shade 09" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
+              <toggleButton id="btn03_07" image="c03_07" showLabel="false" tag="51,103,0" screentip="Yellow Green — Deep" supertip="#336700 | RGB 51, 103, 0 | Color 03 | Shade 07" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn03_08" image="c03_08" showLabel="false" tag="37,78,0" screentip="Yellow Green — Dark" supertip="#254E00 | RGB 37, 78, 0 | Color 03 | Shade 08" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn03_09" image="c03_09" showLabel="false" tag="24,55,0" screentip="Yellow Green — Darkest" supertip="#183700 | RGB 24, 55, 0 | Color 03 | Shade 09" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
             </box>
           </box>
         </group>
         <group id="grp04">
           <box id="grid04" boxStyle="vertical">
             <box id="row04_1" boxStyle="horizontal">
-              <toggleButton id="btn04_01" image="c04_01" showLabel="false" tag="190,253,211" screentip="Green — Lightest" supertip="#BEFDD3 | RGB 190, 253, 211 | Color 04 | Shade 01" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn04_02" image="c04_02" showLabel="false" tag="145,232,176" screentip="Green — Very Light" supertip="#91E8B0 | RGB 145, 232, 176 | Color 04 | Shade 02" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn04_03" image="c04_03" showLabel="false" tag="94,210,142" screentip="Green — Light" supertip="#5ED28E | RGB 94, 210, 142 | Color 04 | Shade 03" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
+              <toggleButton id="btn04_01" image="c04_01" showLabel="false" tag="190,253,211" screentip="Green — Lightest" supertip="#BEFDD3 | RGB 190, 253, 211 | Color 04 | Shade 01" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn04_02" image="c04_02" showLabel="false" tag="145,232,176" screentip="Green — Very Light" supertip="#91E8B0 | RGB 145, 232, 176 | Color 04 | Shade 02" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn04_03" image="c04_03" showLabel="false" tag="94,210,142" screentip="Green — Light" supertip="#5ED28E | RGB 94, 210, 142 | Color 04 | Shade 03" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
             </box>
             <box id="row04_2" boxStyle="horizontal">
-              <toggleButton id="btn04_04" image="c04_04" showLabel="false" tag="33,187,111" screentip="Green — Soft" supertip="#21BB6F | RGB 33, 187, 111 | Color 04 | Shade 04" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn04_05" image="c04_05" showLabel="false" tag="0,160,91" screentip="Green — Medium" supertip="#00A05B | RGB 0, 160, 91 | Color 04 | Shade 05" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn04_06" image="c04_06" showLabel="false" tag="0,132,74" screentip="Green — Rich" supertip="#00844A | RGB 0, 132, 74 | Color 04 | Shade 06" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
+              <toggleButton id="btn04_04" image="c04_04" showLabel="false" tag="33,187,111" screentip="Green — Soft" supertip="#21BB6F | RGB 33, 187, 111 | Color 04 | Shade 04" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn04_05" image="c04_05" showLabel="false" tag="0,160,91" screentip="Green — Medium" supertip="#00A05B | RGB 0, 160, 91 | Color 04 | Shade 05" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn04_06" image="c04_06" showLabel="false" tag="0,132,74" screentip="Green — Rich" supertip="#00844A | RGB 0, 132, 74 | Color 04 | Shade 06" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
             </box>
             <box id="row04_3" boxStyle="horizontal">
-              <toggleButton id="btn04_07" image="c04_07" showLabel="false" tag="0,106,58" screentip="Green — Deep" supertip="#006A3A | RGB 0, 106, 58 | Color 04 | Shade 07" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn04_08" image="c04_08" showLabel="false" tag="0,80,43" screentip="Green — Dark" supertip="#00502B | RGB 0, 80, 43 | Color 04 | Shade 08" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn04_09" image="c04_09" showLabel="false" tag="0,56,28" screentip="Green — Darkest" supertip="#00381C | RGB 0, 56, 28 | Color 04 | Shade 09" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
+              <toggleButton id="btn04_07" image="c04_07" showLabel="false" tag="0,106,58" screentip="Green — Deep" supertip="#006A3A | RGB 0, 106, 58 | Color 04 | Shade 07" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn04_08" image="c04_08" showLabel="false" tag="0,80,43" screentip="Green — Dark" supertip="#00502B | RGB 0, 80, 43 | Color 04 | Shade 08" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn04_09" image="c04_09" showLabel="false" tag="0,56,28" screentip="Green — Darkest" supertip="#00381C | RGB 0, 56, 28 | Color 04 | Shade 09" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
             </box>
           </box>
         </group>
         <group id="grp05">
           <box id="grid05" boxStyle="vertical">
             <box id="row05_1" boxStyle="horizontal">
-              <toggleButton id="btn05_01" image="c05_01" showLabel="false" tag="174,254,232" screentip="Emerald — Lightest" supertip="#AEFEE8 | RGB 174, 254, 232 | Color 05 | Shade 01" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn05_02" image="c05_02" showLabel="false" tag="117,234,205" screentip="Emerald — Very Light" supertip="#75EACD | RGB 117, 234, 205 | Color 05 | Shade 02" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn05_03" image="c05_03" showLabel="false" tag="19,213,178" screentip="Emerald — Light" supertip="#13D5B2 | RGB 19, 213, 178 | Color 05 | Shade 03" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
+              <toggleButton id="btn05_01" image="c05_01" showLabel="false" tag="174,254,232" screentip="Emerald — Lightest" supertip="#AEFEE8 | RGB 174, 254, 232 | Color 05 | Shade 01" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn05_02" image="c05_02" showLabel="false" tag="117,234,205" screentip="Emerald — Very Light" supertip="#75EACD | RGB 117, 234, 205 | Color 05 | Shade 02" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn05_03" image="c05_03" showLabel="false" tag="19,213,178" screentip="Emerald — Light" supertip="#13D5B2 | RGB 19, 213, 178 | Color 05 | Shade 03" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
             </box>
             <box id="row05_2" boxStyle="horizontal">
-              <toggleButton id="btn05_04" image="c05_04" showLabel="false" tag="0,184,154" screentip="Emerald — Soft" supertip="#00B89A | RGB 0, 184, 154 | Color 05 | Shade 04" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn05_05" image="c05_05" showLabel="false" tag="0,157,130" screentip="Emerald — Medium" supertip="#009D82 | RGB 0, 157, 130 | Color 05 | Shade 05" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn05_06" image="c05_06" showLabel="false" tag="0,129,107" screentip="Emerald — Rich" supertip="#00816B | RGB 0, 129, 107 | Color 05 | Shade 06" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
+              <toggleButton id="btn05_04" image="c05_04" showLabel="false" tag="0,184,154" screentip="Emerald — Soft" supertip="#00B89A | RGB 0, 184, 154 | Color 05 | Shade 04" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn05_05" image="c05_05" showLabel="false" tag="0,157,130" screentip="Emerald — Medium" supertip="#009D82 | RGB 0, 157, 130 | Color 05 | Shade 05" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn05_06" image="c05_06" showLabel="false" tag="0,129,107" screentip="Emerald — Rich" supertip="#00816B | RGB 0, 129, 107 | Color 05 | Shade 06" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
             </box>
             <box id="row05_3" boxStyle="horizontal">
-              <toggleButton id="btn05_07" image="c05_07" showLabel="false" tag="0,103,85" screentip="Emerald — Deep" supertip="#006755 | RGB 0, 103, 85 | Color 05 | Shade 07" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn05_08" image="c05_08" showLabel="false" tag="0,78,64" screentip="Emerald — Dark" supertip="#004E40 | RGB 0, 78, 64 | Color 05 | Shade 08" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn05_09" image="c05_09" showLabel="false" tag="0,55,44" screentip="Emerald — Darkest" supertip="#00372C | RGB 0, 55, 44 | Color 05 | Shade 09" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
+              <toggleButton id="btn05_07" image="c05_07" showLabel="false" tag="0,103,85" screentip="Emerald — Deep" supertip="#006755 | RGB 0, 103, 85 | Color 05 | Shade 07" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn05_08" image="c05_08" showLabel="false" tag="0,78,64" screentip="Emerald — Dark" supertip="#004E40 | RGB 0, 78, 64 | Color 05 | Shade 08" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn05_09" image="c05_09" showLabel="false" tag="0,55,44" screentip="Emerald — Darkest" supertip="#00372C | RGB 0, 55, 44 | Color 05 | Shade 09" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
             </box>
           </box>
         </group>
         <group id="grp06">
           <box id="grid06" boxStyle="vertical">
             <box id="row06_1" boxStyle="horizontal">
-              <toggleButton id="btn06_01" image="c06_01" showLabel="false" tag="165,254,253" screentip="Teal — Lightest" supertip="#A5FEFD | RGB 165, 254, 253 | Color 06 | Shade 01" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn06_02" image="c06_02" showLabel="false" tag="101,233,232" screentip="Teal — Very Light" supertip="#65E9E8 | RGB 101, 233, 232 | Color 06 | Shade 02" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn06_03" image="c06_03" showLabel="false" tag="0,209,210" screentip="Teal — Light" supertip="#00D1D2 | RGB 0, 209, 210 | Color 06 | Shade 03" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
+              <toggleButton id="btn06_01" image="c06_01" showLabel="false" tag="165,254,253" screentip="Teal — Lightest" supertip="#A5FEFD | RGB 165, 254, 253 | Color 06 | Shade 01" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn06_02" image="c06_02" showLabel="false" tag="101,233,232" screentip="Teal — Very Light" supertip="#65E9E8 | RGB 101, 233, 232 | Color 06 | Shade 02" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn06_03" image="c06_03" showLabel="false" tag="0,209,210" screentip="Teal — Light" supertip="#00D1D2 | RGB 0, 209, 210 | Color 06 | Shade 03" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
             </box>
             <box id="row06_2" boxStyle="horizontal">
-              <toggleButton id="btn06_04" image="c06_04" showLabel="false" tag="0,181,181" screentip="Teal — Soft" supertip="#00B5B5 | RGB 0, 181, 181 | Color 06 | Shade 04" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn06_05" image="c06_05" showLabel="false" tag="0,154,154" screentip="Teal — Medium" supertip="#009A9A | RGB 0, 154, 154 | Color 06 | Shade 05" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn06_06" image="c06_06" showLabel="false" tag="0,127,127" screentip="Teal — Rich" supertip="#007F7F | RGB 0, 127, 127 | Color 06 | Shade 06" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
+              <toggleButton id="btn06_04" image="c06_04" showLabel="false" tag="0,181,181" screentip="Teal — Soft" supertip="#00B5B5 | RGB 0, 181, 181 | Color 06 | Shade 04" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn06_05" image="c06_05" showLabel="false" tag="0,154,154" screentip="Teal — Medium" supertip="#009A9A | RGB 0, 154, 154 | Color 06 | Shade 05" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn06_06" image="c06_06" showLabel="false" tag="0,127,127" screentip="Teal — Rich" supertip="#007F7F | RGB 0, 127, 127 | Color 06 | Shade 06" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
             </box>
             <box id="row06_3" boxStyle="horizontal">
-              <toggleButton id="btn06_07" image="c06_07" showLabel="false" tag="0,101,102" screentip="Teal — Deep" supertip="#006566 | RGB 0, 101, 102 | Color 06 | Shade 07" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn06_08" image="c06_08" showLabel="false" tag="0,77,77" screentip="Teal — Dark" supertip="#004D4D | RGB 0, 77, 77 | Color 06 | Shade 08" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn06_09" image="c06_09" showLabel="false" tag="0,54,54" screentip="Teal — Darkest" supertip="#003636 | RGB 0, 54, 54 | Color 06 | Shade 09" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
+              <toggleButton id="btn06_07" image="c06_07" showLabel="false" tag="0,101,102" screentip="Teal — Deep" supertip="#006566 | RGB 0, 101, 102 | Color 06 | Shade 07" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn06_08" image="c06_08" showLabel="false" tag="0,77,77" screentip="Teal — Dark" supertip="#004D4D | RGB 0, 77, 77 | Color 06 | Shade 08" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn06_09" image="c06_09" showLabel="false" tag="0,54,54" screentip="Teal — Darkest" supertip="#003636 | RGB 0, 54, 54 | Color 06 | Shade 09" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
             </box>
           </box>
         </group>
         <group id="grp07">
           <box id="grid07" boxStyle="vertical">
             <box id="row07_1" boxStyle="horizontal">
-              <toggleButton id="btn07_01" image="c07_01" showLabel="false" tag="201,244,255" screentip="Cyan — Lightest" supertip="#C9F4FF | RGB 201, 244, 255 | Color 07 | Shade 01" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn07_02" image="c07_02" showLabel="false" tag="110,228,255" screentip="Cyan — Very Light" supertip="#6EE4FF | RGB 110, 228, 255 | Color 07 | Shade 02" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn07_03" image="c07_03" showLabel="false" tag="0,205,238" screentip="Cyan — Light" supertip="#00CDEE | RGB 0, 205, 238 | Color 07 | Shade 03" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
+              <toggleButton id="btn07_01" image="c07_01" showLabel="false" tag="201,244,255" screentip="Cyan — Lightest" supertip="#C9F4FF | RGB 201, 244, 255 | Color 07 | Shade 01" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn07_02" image="c07_02" showLabel="false" tag="110,228,255" screentip="Cyan — Very Light" supertip="#6EE4FF | RGB 110, 228, 255 | Color 07 | Shade 02" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn07_03" image="c07_03" showLabel="false" tag="0,205,238" screentip="Cyan — Light" supertip="#00CDEE | RGB 0, 205, 238 | Color 07 | Shade 03" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
             </box>
             <box id="row07_2" boxStyle="horizontal">
-              <toggleButton id="btn07_04" image="c07_04" showLabel="false" tag="0,177,206" screentip="Cyan — Soft" supertip="#00B1CE | RGB 0, 177, 206 | Color 07 | Shade 04" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn07_05" image="c07_05" showLabel="false" tag="0,150,175" screentip="Cyan — Medium" supertip="#0096AF | RGB 0, 150, 175 | Color 07 | Shade 05" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn07_06" image="c07_06" showLabel="false" tag="0,124,145" screentip="Cyan — Rich" supertip="#007C91 | RGB 0, 124, 145 | Color 07 | Shade 06" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
+              <toggleButton id="btn07_04" image="c07_04" showLabel="false" tag="0,177,206" screentip="Cyan — Soft" supertip="#00B1CE | RGB 0, 177, 206 | Color 07 | Shade 04" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn07_05" image="c07_05" showLabel="false" tag="0,150,175" screentip="Cyan — Medium" supertip="#0096AF | RGB 0, 150, 175 | Color 07 | Shade 05" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn07_06" image="c07_06" showLabel="false" tag="0,124,145" screentip="Cyan — Rich" supertip="#007C91 | RGB 0, 124, 145 | Color 07 | Shade 06" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
             </box>
             <box id="row07_3" boxStyle="horizontal">
-              <toggleButton id="btn07_07" image="c07_07" showLabel="false" tag="0,99,116" screentip="Cyan — Deep" supertip="#006374 | RGB 0, 99, 116 | Color 07 | Shade 07" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn07_08" image="c07_08" showLabel="false" tag="0,75,89" screentip="Cyan — Dark" supertip="#004B59 | RGB 0, 75, 89 | Color 07 | Shade 08" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn07_09" image="c07_09" showLabel="false" tag="0,52,62" screentip="Cyan — Darkest" supertip="#00343E | RGB 0, 52, 62 | Color 07 | Shade 09" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
+              <toggleButton id="btn07_07" image="c07_07" showLabel="false" tag="0,99,116" screentip="Cyan — Deep" supertip="#006374 | RGB 0, 99, 116 | Color 07 | Shade 07" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn07_08" image="c07_08" showLabel="false" tag="0,75,89" screentip="Cyan — Dark" supertip="#004B59 | RGB 0, 75, 89 | Color 07 | Shade 08" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn07_09" image="c07_09" showLabel="false" tag="0,52,62" screentip="Cyan — Darkest" supertip="#00343E | RGB 0, 52, 62 | Color 07 | Shade 09" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
             </box>
           </box>
         </group>
         <group id="grp08">
           <box id="grid08" boxStyle="vertical">
             <box id="row08_1" boxStyle="horizontal">
-              <toggleButton id="btn08_01" image="c08_01" showLabel="false" tag="214,239,255" screentip="Sky — Lightest" supertip="#D6EFFF | RGB 214, 239, 255 | Color 08 | Shade 01" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn08_02" image="c08_02" showLabel="false" tag="156,218,255" screentip="Sky — Very Light" supertip="#9CDAFF | RGB 156, 218, 255 | Color 08 | Shade 02" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn08_03" image="c08_03" showLabel="false" tag="84,196,255" screentip="Sky — Light" supertip="#54C4FF | RGB 84, 196, 255 | Color 08 | Shade 03" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
+              <toggleButton id="btn08_01" image="c08_01" showLabel="false" tag="214,239,255" screentip="Sky — Lightest" supertip="#D6EFFF | RGB 214, 239, 255 | Color 08 | Shade 01" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn08_02" image="c08_02" showLabel="false" tag="156,218,255" screentip="Sky — Very Light" supertip="#9CDAFF | RGB 156, 218, 255 | Color 08 | Shade 02" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn08_03" image="c08_03" showLabel="false" tag="84,196,255" screentip="Sky — Light" supertip="#54C4FF | RGB 84, 196, 255 | Color 08 | Shade 03" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
             </box>
             <box id="row08_2" boxStyle="horizontal">
-              <toggleButton id="btn08_04" image="c08_04" showLabel="false" tag="0,171,237" screentip="Sky — Soft" supertip="#00ABED | RGB 0, 171, 237 | Color 08 | Shade 04" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn08_05" image="c08_05" showLabel="false" tag="0,145,201" screentip="Sky — Medium" supertip="#0091C9 | RGB 0, 145, 201 | Color 08 | Shade 05" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn08_06" image="c08_06" showLabel="false" tag="0,120,167" screentip="Sky — Rich" supertip="#0078A7 | RGB 0, 120, 167 | Color 08 | Shade 06" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
+              <toggleButton id="btn08_04" image="c08_04" showLabel="false" tag="0,171,237" screentip="Sky — Soft" supertip="#00ABED | RGB 0, 171, 237 | Color 08 | Shade 04" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn08_05" image="c08_05" showLabel="false" tag="0,145,201" screentip="Sky — Medium" supertip="#0091C9 | RGB 0, 145, 201 | Color 08 | Shade 05" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn08_06" image="c08_06" showLabel="false" tag="0,120,167" screentip="Sky — Rich" supertip="#0078A7 | RGB 0, 120, 167 | Color 08 | Shade 06" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
             </box>
             <box id="row08_3" boxStyle="horizontal">
-              <toggleButton id="btn08_07" image="c08_07" showLabel="false" tag="0,96,134" screentip="Sky — Deep" supertip="#006086 | RGB 0, 96, 134 | Color 08 | Shade 07" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn08_08" image="c08_08" showLabel="false" tag="0,72,103" screentip="Sky — Dark" supertip="#004867 | RGB 0, 72, 103 | Color 08 | Shade 08" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn08_09" image="c08_09" showLabel="false" tag="0,50,73" screentip="Sky — Darkest" supertip="#003249 | RGB 0, 50, 73 | Color 08 | Shade 09" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
+              <toggleButton id="btn08_07" image="c08_07" showLabel="false" tag="0,96,134" screentip="Sky — Deep" supertip="#006086 | RGB 0, 96, 134 | Color 08 | Shade 07" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn08_08" image="c08_08" showLabel="false" tag="0,72,103" screentip="Sky — Dark" supertip="#004867 | RGB 0, 72, 103 | Color 08 | Shade 08" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn08_09" image="c08_09" showLabel="false" tag="0,50,73" screentip="Sky — Darkest" supertip="#003249 | RGB 0, 50, 73 | Color 08 | Shade 09" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
             </box>
           </box>
         </group>
         <group id="grp09">
           <box id="grid09" boxStyle="vertical">
             <box id="row09_1" boxStyle="horizontal">
-              <toggleButton id="btn09_01" image="c09_01" showLabel="false" tag="223,237,255" screentip="Blue — Lightest" supertip="#DFEDFF | RGB 223, 237, 255 | Color 09 | Shade 01" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn09_02" image="c09_02" showLabel="false" tag="179,212,255" screentip="Blue — Very Light" supertip="#B3D4FF | RGB 179, 212, 255 | Color 09 | Shade 02" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn09_03" image="c09_03" showLabel="false" tag="133,186,255" screentip="Blue — Light" supertip="#85BAFF | RGB 133, 186, 255 | Color 09 | Shade 03" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
+              <toggleButton id="btn09_01" image="c09_01" showLabel="false" tag="223,237,255" screentip="Blue — Lightest" supertip="#DFEDFF | RGB 223, 237, 255 | Color 09 | Shade 01" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn09_02" image="c09_02" showLabel="false" tag="179,212,255" screentip="Blue — Very Light" supertip="#B3D4FF | RGB 179, 212, 255 | Color 09 | Shade 02" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn09_03" image="c09_03" showLabel="false" tag="133,186,255" screentip="Blue — Light" supertip="#85BAFF | RGB 133, 186, 255 | Color 09 | Shade 03" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
             </box>
             <box id="row09_2" boxStyle="horizontal">
-              <toggleButton id="btn09_04" image="c09_04" showLabel="false" tag="83,160,255" screentip="Blue — Soft" supertip="#53A0FF | RGB 83, 160, 255 | Color 09 | Shade 04" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn09_05" image="c09_05" showLabel="false" tag="45,134,236" screentip="Blue — Medium" supertip="#2D86EC | RGB 45, 134, 236 | Color 09 | Shade 05" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn09_06" image="c09_06" showLabel="false" tag="16,109,206" screentip="Blue — Rich" supertip="#106DCE | RGB 16, 109, 206 | Color 09 | Shade 06" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
+              <toggleButton id="btn09_04" image="c09_04" showLabel="false" tag="83,160,255" screentip="Blue — Soft" supertip="#53A0FF | RGB 83, 160, 255 | Color 09 | Shade 04" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn09_05" image="c09_05" showLabel="false" tag="45,134,236" screentip="Blue — Medium" supertip="#2D86EC | RGB 45, 134, 236 | Color 09 | Shade 05" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn09_06" image="c09_06" showLabel="false" tag="16,109,206" screentip="Blue — Rich" supertip="#106DCE | RGB 16, 109, 206 | Color 09 | Shade 06" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
             </box>
             <box id="row09_3" boxStyle="horizontal">
-              <toggleButton id="btn09_07" image="c09_07" showLabel="false" tag="0,86,170" screentip="Blue — Deep" supertip="#0056AA | RGB 0, 86, 170 | Color 09 | Shade 07" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn09_08" image="c09_08" showLabel="false" tag="0,65,131" screentip="Blue — Dark" supertip="#004183 | RGB 0, 65, 131 | Color 09 | Shade 08" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn09_09" image="c09_09" showLabel="false" tag="0,45,94" screentip="Blue — Darkest" supertip="#002D5E | RGB 0, 45, 94 | Color 09 | Shade 09" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
+              <toggleButton id="btn09_07" image="c09_07" showLabel="false" tag="0,86,170" screentip="Blue — Deep" supertip="#0056AA | RGB 0, 86, 170 | Color 09 | Shade 07" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn09_08" image="c09_08" showLabel="false" tag="0,65,131" screentip="Blue — Dark" supertip="#004183 | RGB 0, 65, 131 | Color 09 | Shade 08" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn09_09" image="c09_09" showLabel="false" tag="0,45,94" screentip="Blue — Darkest" supertip="#002D5E | RGB 0, 45, 94 | Color 09 | Shade 09" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
             </box>
           </box>
         </group>
         <group id="grp10">
           <box id="grid10" boxStyle="vertical">
             <box id="row10_1" boxStyle="horizontal">
-              <toggleButton id="btn10_01" image="c10_01" showLabel="false" tag="229,234,255" screentip="Indigo — Lightest" supertip="#E5EAFF | RGB 229, 234, 255 | Color 10 | Shade 01" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn10_02" image="c10_02" showLabel="false" tag="195,206,255" screentip="Indigo — Very Light" supertip="#C3CEFF | RGB 195, 206, 255 | Color 10 | Shade 02" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn10_03" image="c10_03" showLabel="false" tag="162,178,255" screentip="Indigo — Light" supertip="#A2B2FF | RGB 162, 178, 255 | Color 10 | Shade 03" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
+              <toggleButton id="btn10_01" image="c10_01" showLabel="false" tag="229,234,255" screentip="Indigo — Lightest" supertip="#E5EAFF | RGB 229, 234, 255 | Color 10 | Shade 01" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn10_02" image="c10_02" showLabel="false" tag="195,206,255" screentip="Indigo — Very Light" supertip="#C3CEFF | RGB 195, 206, 255 | Color 10 | Shade 02" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn10_03" image="c10_03" showLabel="false" tag="162,178,255" screentip="Indigo — Light" supertip="#A2B2FF | RGB 162, 178, 255 | Color 10 | Shade 03" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
             </box>
             <box id="row10_2" boxStyle="horizontal">
-              <toggleButton id="btn10_04" image="c10_04" showLabel="false" tag="131,148,255" screentip="Indigo — Soft" supertip="#8394FF | RGB 131, 148, 255 | Color 10 | Shade 04" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn10_05" image="c10_05" showLabel="false" tag="106,120,237" screentip="Indigo — Medium" supertip="#6A78ED | RGB 106, 120, 237 | Color 10 | Shade 05" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn10_06" image="c10_06" showLabel="false" tag="85,96,207" screentip="Indigo — Rich" supertip="#5560CF | RGB 85, 96, 207 | Color 10 | Shade 06" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
+              <toggleButton id="btn10_04" image="c10_04" showLabel="false" tag="131,148,255" screentip="Indigo — Soft" supertip="#8394FF | RGB 131, 148, 255 | Color 10 | Shade 04" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn10_05" image="c10_05" showLabel="false" tag="106,120,237" screentip="Indigo — Medium" supertip="#6A78ED | RGB 106, 120, 237 | Color 10 | Shade 05" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn10_06" image="c10_06" showLabel="false" tag="85,96,207" screentip="Indigo — Rich" supertip="#5560CF | RGB 85, 96, 207 | Color 10 | Shade 06" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
             </box>
             <box id="row10_3" boxStyle="horizontal">
-              <toggleButton id="btn10_07" image="c10_07" showLabel="false" tag="66,74,172" screentip="Indigo — Deep" supertip="#424AAC | RGB 66, 74, 172 | Color 10 | Shade 07" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn10_08" image="c10_08" showLabel="false" tag="48,54,136" screentip="Indigo — Dark" supertip="#303688 | RGB 48, 54, 136 | Color 10 | Shade 08" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn10_09" image="c10_09" showLabel="false" tag="33,37,97" screentip="Indigo — Darkest" supertip="#212561 | RGB 33, 37, 97 | Color 10 | Shade 09" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
+              <toggleButton id="btn10_07" image="c10_07" showLabel="false" tag="66,74,172" screentip="Indigo — Deep" supertip="#424AAC | RGB 66, 74, 172 | Color 10 | Shade 07" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn10_08" image="c10_08" showLabel="false" tag="48,54,136" screentip="Indigo — Dark" supertip="#303688 | RGB 48, 54, 136 | Color 10 | Shade 08" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn10_09" image="c10_09" showLabel="false" tag="33,37,97" screentip="Indigo — Darkest" supertip="#212561 | RGB 33, 37, 97 | Color 10 | Shade 09" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
             </box>
           </box>
         </group>
         <group id="grp11">
           <box id="grid11" boxStyle="vertical">
             <box id="row11_1" boxStyle="horizontal">
-              <toggleButton id="btn11_01" image="c11_01" showLabel="false" tag="236,231,255" screentip="Violet — Lightest" supertip="#ECE7FF | RGB 236, 231, 255 | Color 11 | Shade 01" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn11_02" image="c11_02" showLabel="false" tag="212,200,255" screentip="Violet — Very Light" supertip="#D4C8FF | RGB 212, 200, 255 | Color 11 | Shade 02" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn11_03" image="c11_03" showLabel="false" tag="189,167,255" screentip="Violet — Light" supertip="#BDA7FF | RGB 189, 167, 255 | Color 11 | Shade 03" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
+              <toggleButton id="btn11_01" image="c11_01" showLabel="false" tag="236,231,255" screentip="Violet — Lightest" supertip="#ECE7FF | RGB 236, 231, 255 | Color 11 | Shade 01" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn11_02" image="c11_02" showLabel="false" tag="212,200,255" screentip="Violet — Very Light" supertip="#D4C8FF | RGB 212, 200, 255 | Color 11 | Shade 02" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn11_03" image="c11_03" showLabel="false" tag="189,167,255" screentip="Violet — Light" supertip="#BDA7FF | RGB 189, 167, 255 | Color 11 | Shade 03" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
             </box>
             <box id="row11_2" boxStyle="horizontal">
-              <toggleButton id="btn11_04" image="c11_04" showLabel="false" tag="167,134,249" screentip="Violet — Soft" supertip="#A786F9 | RGB 167, 134, 249 | Color 11 | Shade 04" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn11_05" image="c11_05" showLabel="false" tag="144,107,227" screentip="Violet — Medium" supertip="#906BE3 | RGB 144, 107, 227 | Color 11 | Shade 05" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn11_06" image="c11_06" showLabel="false" tag="120,83,197" screentip="Violet — Rich" supertip="#7853C5 | RGB 120, 83, 197 | Color 11 | Shade 06" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
+              <toggleButton id="btn11_04" image="c11_04" showLabel="false" tag="167,134,249" screentip="Violet — Soft" supertip="#A786F9 | RGB 167, 134, 249 | Color 11 | Shade 04" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn11_05" image="c11_05" showLabel="false" tag="144,107,227" screentip="Violet — Medium" supertip="#906BE3 | RGB 144, 107, 227 | Color 11 | Shade 05" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn11_06" image="c11_06" showLabel="false" tag="120,83,197" screentip="Violet — Rich" supertip="#7853C5 | RGB 120, 83, 197 | Color 11 | Shade 06" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
             </box>
             <box id="row11_3" boxStyle="horizontal">
-              <toggleButton id="btn11_07" image="c11_07" showLabel="false" tag="97,63,163" screentip="Violet — Deep" supertip="#613FA3 | RGB 97, 63, 163 | Color 11 | Shade 07" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn11_08" image="c11_08" showLabel="false" tag="74,45,129" screentip="Violet — Dark" supertip="#4A2D81 | RGB 74, 45, 129 | Color 11 | Shade 08" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn11_09" image="c11_09" showLabel="false" tag="51,30,92" screentip="Violet — Darkest" supertip="#331E5C | RGB 51, 30, 92 | Color 11 | Shade 09" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
+              <toggleButton id="btn11_07" image="c11_07" showLabel="false" tag="97,63,163" screentip="Violet — Deep" supertip="#613FA3 | RGB 97, 63, 163 | Color 11 | Shade 07" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn11_08" image="c11_08" showLabel="false" tag="74,45,129" screentip="Violet — Dark" supertip="#4A2D81 | RGB 74, 45, 129 | Color 11 | Shade 08" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn11_09" image="c11_09" showLabel="false" tag="51,30,92" screentip="Violet — Darkest" supertip="#331E5C | RGB 51, 30, 92 | Color 11 | Shade 09" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
             </box>
           </box>
         </group>
         <group id="grp12">
           <box id="grid12" boxStyle="vertical">
             <box id="row12_1" boxStyle="horizontal">
-              <toggleButton id="btn12_01" image="c12_01" showLabel="false" tag="246,227,255" screentip="Purple — Lightest" supertip="#F6E3FF | RGB 246, 227, 255 | Color 12 | Shade 01" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn12_02" image="c12_02" showLabel="false" tag="234,189,255" screentip="Purple — Very Light" supertip="#EABDFF | RGB 234, 189, 255 | Color 12 | Shade 02" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn12_03" image="c12_03" showLabel="false" tag="218,154,247" screentip="Purple — Light" supertip="#DA9AF7 | RGB 218, 154, 247 | Color 12 | Shade 03" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
+              <toggleButton id="btn12_01" image="c12_01" showLabel="false" tag="246,227,255" screentip="Purple — Lightest" supertip="#F6E3FF | RGB 246, 227, 255 | Color 12 | Shade 01" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn12_02" image="c12_02" showLabel="false" tag="234,189,255" screentip="Purple — Very Light" supertip="#EABDFF | RGB 234, 189, 255 | Color 12 | Shade 02" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn12_03" image="c12_03" showLabel="false" tag="218,154,247" screentip="Purple — Light" supertip="#DA9AF7 | RGB 218, 154, 247 | Color 12 | Shade 03" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
             </box>
             <box id="row12_2" boxStyle="horizontal">
-              <toggleButton id="btn12_04" image="c12_04" showLabel="false" tag="196,123,228" screentip="Purple — Soft" supertip="#C47BE4 | RGB 196, 123, 228 | Color 12 | Shade 04" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn12_05" image="c12_05" showLabel="false" tag="173,95,205" screentip="Purple — Medium" supertip="#AD5FCD | RGB 173, 95, 205 | Color 12 | Shade 05" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn12_06" image="c12_06" showLabel="false" tag="147,72,177" screentip="Purple — Rich" supertip="#9348B1 | RGB 147, 72, 177 | Color 12 | Shade 06" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
+              <toggleButton id="btn12_04" image="c12_04" showLabel="false" tag="196,123,228" screentip="Purple — Soft" supertip="#C47BE4 | RGB 196, 123, 228 | Color 12 | Shade 04" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn12_05" image="c12_05" showLabel="false" tag="173,95,205" screentip="Purple — Medium" supertip="#AD5FCD | RGB 173, 95, 205 | Color 12 | Shade 05" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn12_06" image="c12_06" showLabel="false" tag="147,72,177" screentip="Purple — Rich" supertip="#9348B1 | RGB 147, 72, 177 | Color 12 | Shade 06" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
             </box>
             <box id="row12_3" boxStyle="horizontal">
-              <toggleButton id="btn12_07" image="c12_07" showLabel="false" tag="119,53,146" screentip="Purple — Deep" supertip="#773592 | RGB 119, 53, 146 | Color 12 | Shade 07" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn12_08" image="c12_08" showLabel="false" tag="92,36,114" screentip="Purple — Dark" supertip="#5C2472 | RGB 92, 36, 114 | Color 12 | Shade 08" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn12_09" image="c12_09" showLabel="false" tag="65,24,81" screentip="Purple — Darkest" supertip="#411851 | RGB 65, 24, 81 | Color 12 | Shade 09" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
+              <toggleButton id="btn12_07" image="c12_07" showLabel="false" tag="119,53,146" screentip="Purple — Deep" supertip="#773592 | RGB 119, 53, 146 | Color 12 | Shade 07" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn12_08" image="c12_08" showLabel="false" tag="92,36,114" screentip="Purple — Dark" supertip="#5C2472 | RGB 92, 36, 114 | Color 12 | Shade 08" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn12_09" image="c12_09" showLabel="false" tag="65,24,81" screentip="Purple — Darkest" supertip="#411851 | RGB 65, 24, 81 | Color 12 | Shade 09" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
             </box>
           </box>
         </group>
         <group id="grp13">
           <box id="grid13" boxStyle="vertical">
             <box id="row13_1" boxStyle="horizontal">
-              <toggleButton id="btn13_01" image="c13_01" showLabel="false" tag="255,225,247" screentip="Magenta — Lightest" supertip="#FFE1F7 | RGB 255, 225, 247 | Color 13 | Shade 01" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn13_02" image="c13_02" showLabel="false" tag="255,181,238" screentip="Magenta — Very Light" supertip="#FFB5EE | RGB 255, 181, 238 | Color 13 | Shade 02" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn13_03" image="c13_03" showLabel="false" tag="240,146,220" screentip="Magenta — Light" supertip="#F092DC | RGB 240, 146, 220 | Color 13 | Shade 03" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
+              <toggleButton id="btn13_01" image="c13_01" showLabel="false" tag="255,225,247" screentip="Magenta — Lightest" supertip="#FFE1F7 | RGB 255, 225, 247 | Color 13 | Shade 01" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn13_02" image="c13_02" showLabel="false" tag="255,181,238" screentip="Magenta — Very Light" supertip="#FFB5EE | RGB 255, 181, 238 | Color 13 | Shade 02" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn13_03" image="c13_03" showLabel="false" tag="240,146,220" screentip="Magenta — Light" supertip="#F092DC | RGB 240, 146, 220 | Color 13 | Shade 03" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
             </box>
             <box id="row13_2" boxStyle="horizontal">
-              <toggleButton id="btn13_04" image="c13_04" showLabel="false" tag="219,114,199" screentip="Magenta — Soft" supertip="#DB72C7 | RGB 219, 114, 199 | Color 13 | Shade 04" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn13_05" image="c13_05" showLabel="false" tag="195,86,175" screentip="Magenta — Medium" supertip="#C356AF | RGB 195, 86, 175 | Color 13 | Shade 05" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn13_06" image="c13_06" showLabel="false" tag="167,63,149" screentip="Magenta — Rich" supertip="#A73F95 | RGB 167, 63, 149 | Color 13 | Shade 06" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
+              <toggleButton id="btn13_04" image="c13_04" showLabel="false" tag="219,114,199" screentip="Magenta — Soft" supertip="#DB72C7 | RGB 219, 114, 199 | Color 13 | Shade 04" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn13_05" image="c13_05" showLabel="false" tag="195,86,175" screentip="Magenta — Medium" supertip="#C356AF | RGB 195, 86, 175 | Color 13 | Shade 05" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn13_06" image="c13_06" showLabel="false" tag="167,63,149" screentip="Magenta — Rich" supertip="#A73F95 | RGB 167, 63, 149 | Color 13 | Shade 06" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
             </box>
             <box id="row13_3" boxStyle="horizontal">
-              <toggleButton id="btn13_07" image="c13_07" showLabel="false" tag="137,44,121" screentip="Magenta — Deep" supertip="#892C79 | RGB 137, 44, 121 | Color 13 | Shade 07" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn13_08" image="c13_08" showLabel="false" tag="106,28,94" screentip="Magenta — Dark" supertip="#6A1C5E | RGB 106, 28, 94 | Color 13 | Shade 08" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn13_09" image="c13_09" showLabel="false" tag="75,18,66" screentip="Magenta — Darkest" supertip="#4B1242 | RGB 75, 18, 66 | Color 13 | Shade 09" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
+              <toggleButton id="btn13_07" image="c13_07" showLabel="false" tag="137,44,121" screentip="Magenta — Deep" supertip="#892C79 | RGB 137, 44, 121 | Color 13 | Shade 07" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn13_08" image="c13_08" showLabel="false" tag="106,28,94" screentip="Magenta — Dark" supertip="#6A1C5E | RGB 106, 28, 94 | Color 13 | Shade 08" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn13_09" image="c13_09" showLabel="false" tag="75,18,66" screentip="Magenta — Darkest" supertip="#4B1242 | RGB 75, 18, 66 | Color 13 | Shade 09" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
             </box>
           </box>
         </group>
         <group id="grp14">
           <box id="grid14" boxStyle="vertical">
             <box id="row14_1" boxStyle="horizontal">
-              <toggleButton id="btn14_01" image="c14_01" showLabel="false" tag="255,226,236" screentip="Rose — Lightest" supertip="#FFE2EC | RGB 255, 226, 236 | Color 14 | Shade 01" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn14_02" image="c14_02" showLabel="false" tag="255,186,212" screentip="Rose — Very Light" supertip="#FFBAD4 | RGB 255, 186, 212 | Color 14 | Shade 02" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn14_03" image="c14_03" showLabel="false" tag="255,142,188" screentip="Rose — Light" supertip="#FF8EBC | RGB 255, 142, 188 | Color 14 | Shade 03" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
+              <toggleButton id="btn14_01" image="c14_01" showLabel="false" tag="255,226,236" screentip="Rose — Lightest" supertip="#FFE2EC | RGB 255, 226, 236 | Color 14 | Shade 01" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn14_02" image="c14_02" showLabel="false" tag="255,186,212" screentip="Rose — Very Light" supertip="#FFBAD4 | RGB 255, 186, 212 | Color 14 | Shade 02" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn14_03" image="c14_03" showLabel="false" tag="255,142,188" screentip="Rose — Light" supertip="#FF8EBC | RGB 255, 142, 188 | Color 14 | Shade 03" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
             </box>
             <box id="row14_2" boxStyle="horizontal">
-              <toggleButton id="btn14_04" image="c14_04" showLabel="false" tag="235,109,164" screentip="Rose — Soft" supertip="#EB6DA4 | RGB 235, 109, 164 | Color 14 | Shade 04" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn14_05" image="c14_05" showLabel="false" tag="210,79,139" screentip="Rose — Medium" supertip="#D24F8B | RGB 210, 79, 139 | Color 14 | Shade 05" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn14_06" image="c14_06" showLabel="false" tag="181,56,116" screentip="Rose — Rich" supertip="#B53874 | RGB 181, 56, 116 | Color 14 | Shade 06" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
+              <toggleButton id="btn14_04" image="c14_04" showLabel="false" tag="235,109,164" screentip="Rose — Soft" supertip="#EB6DA4 | RGB 235, 109, 164 | Color 14 | Shade 04" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn14_05" image="c14_05" showLabel="false" tag="210,79,139" screentip="Rose — Medium" supertip="#D24F8B | RGB 210, 79, 139 | Color 14 | Shade 05" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn14_06" image="c14_06" showLabel="false" tag="181,56,116" screentip="Rose — Rich" supertip="#B53874 | RGB 181, 56, 116 | Color 14 | Shade 06" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
             </box>
             <box id="row14_3" boxStyle="horizontal">
-              <toggleButton id="btn14_07" image="c14_07" showLabel="false" tag="149,37,92" screentip="Rose — Deep" supertip="#95255C | RGB 149, 37, 92 | Color 14 | Shade 07" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn14_08" image="c14_08" showLabel="false" tag="116,22,70" screentip="Rose — Dark" supertip="#741646 | RGB 116, 22, 70 | Color 14 | Shade 08" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn14_09" image="c14_09" showLabel="false" tag="83,14,48" screentip="Rose — Darkest" supertip="#530E30 | RGB 83, 14, 48 | Color 14 | Shade 09" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
+              <toggleButton id="btn14_07" image="c14_07" showLabel="false" tag="149,37,92" screentip="Rose — Deep" supertip="#95255C | RGB 149, 37, 92 | Color 14 | Shade 07" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn14_08" image="c14_08" showLabel="false" tag="116,22,70" screentip="Rose — Dark" supertip="#741646 | RGB 116, 22, 70 | Color 14 | Shade 08" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn14_09" image="c14_09" showLabel="false" tag="83,14,48" screentip="Rose — Darkest" supertip="#530E30 | RGB 83, 14, 48 | Color 14 | Shade 09" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
             </box>
           </box>
         </group>
         <group id="grp15">
           <box id="grid15" boxStyle="vertical">
             <box id="row15_1" boxStyle="horizontal">
-              <toggleButton id="btn15_01" image="c15_01" showLabel="false" tag="255,227,229" screentip="Red — Lightest" supertip="#FFE3E5 | RGB 255, 227, 229 | Color 15 | Shade 01" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn15_02" image="c15_02" showLabel="false" tag="255,189,193" screentip="Red — Very Light" supertip="#FFBDC1 | RGB 255, 189, 193 | Color 15 | Shade 02" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn15_03" image="c15_03" showLabel="false" tag="255,147,156" screentip="Red — Light" supertip="#FF939C | RGB 255, 147, 156 | Color 15 | Shade 03" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
+              <toggleButton id="btn15_01" image="c15_01" showLabel="false" tag="255,227,229" screentip="Red — Lightest" supertip="#FFE3E5 | RGB 255, 227, 229 | Color 15 | Shade 01" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn15_02" image="c15_02" showLabel="false" tag="255,189,193" screentip="Red — Very Light" supertip="#FFBDC1 | RGB 255, 189, 193 | Color 15 | Shade 02" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn15_03" image="c15_03" showLabel="false" tag="255,147,156" screentip="Red — Light" supertip="#FF939C | RGB 255, 147, 156 | Color 15 | Shade 03" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
             </box>
             <box id="row15_2" boxStyle="horizontal">
-              <toggleButton id="btn15_04" image="c15_04" showLabel="false" tag="243,109,125" screentip="Red — Soft" supertip="#F36D7D | RGB 243, 109, 125 | Color 15 | Shade 04" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn15_05" image="c15_05" showLabel="false" tag="219,78,99" screentip="Red — Medium" supertip="#DB4E63 | RGB 219, 78, 99 | Color 15 | Shade 05" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn15_06" image="c15_06" showLabel="false" tag="188,54,78" screentip="Red — Rich" supertip="#BC364E | RGB 188, 54, 78 | Color 15 | Shade 06" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
+              <toggleButton id="btn15_04" image="c15_04" showLabel="false" tag="243,109,125" screentip="Red — Soft" supertip="#F36D7D | RGB 243, 109, 125 | Color 15 | Shade 04" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn15_05" image="c15_05" showLabel="false" tag="219,78,99" screentip="Red — Medium" supertip="#DB4E63 | RGB 219, 78, 99 | Color 15 | Shade 05" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn15_06" image="c15_06" showLabel="false" tag="188,54,78" screentip="Red — Rich" supertip="#BC364E | RGB 188, 54, 78 | Color 15 | Shade 06" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
             </box>
             <box id="row15_3" boxStyle="horizontal">
-              <toggleButton id="btn15_07" image="c15_07" showLabel="false" tag="155,35,59" screentip="Red — Deep" supertip="#9B233B | RGB 155, 35, 59 | Color 15 | Shade 07" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn15_08" image="c15_08" showLabel="false" tag="122,20,42" screentip="Red — Dark" supertip="#7A142A | RGB 122, 20, 42 | Color 15 | Shade 08" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn15_09" image="c15_09" showLabel="false" tag="86,12,28" screentip="Red — Darkest" supertip="#560C1C | RGB 86, 12, 28 | Color 15 | Shade 09" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
+              <toggleButton id="btn15_07" image="c15_07" showLabel="false" tag="155,35,59" screentip="Red — Deep" supertip="#9B233B | RGB 155, 35, 59 | Color 15 | Shade 07" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn15_08" image="c15_08" showLabel="false" tag="122,20,42" screentip="Red — Dark" supertip="#7A142A | RGB 122, 20, 42 | Color 15 | Shade 08" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn15_09" image="c15_09" showLabel="false" tag="86,12,28" screentip="Red — Darkest" supertip="#560C1C | RGB 86, 12, 28 | Color 15 | Shade 09" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
             </box>
           </box>
         </group>
         <group id="grp16">
           <box id="grid16" boxStyle="vertical">
             <box id="row16_1" boxStyle="horizontal">
-              <toggleButton id="btn16_01" image="c16_01" showLabel="false" tag="255,228,222" screentip="Coral — Lightest" supertip="#FFE4DE | RGB 255, 228, 222 | Color 16 | Shade 01" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn16_02" image="c16_02" showLabel="false" tag="255,192,175" screentip="Coral — Very Light" supertip="#FFC0AF | RGB 255, 192, 175 | Color 16 | Shade 02" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn16_03" image="c16_03" showLabel="false" tag="255,151,125" screentip="Coral — Light" supertip="#FF977D | RGB 255, 151, 125 | Color 16 | Shade 03" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
+              <toggleButton id="btn16_01" image="c16_01" showLabel="false" tag="255,228,222" screentip="Coral — Lightest" supertip="#FFE4DE | RGB 255, 228, 222 | Color 16 | Shade 01" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn16_02" image="c16_02" showLabel="false" tag="255,192,175" screentip="Coral — Very Light" supertip="#FFC0AF | RGB 255, 192, 175 | Color 16 | Shade 02" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn16_03" image="c16_03" showLabel="false" tag="255,151,125" screentip="Coral — Light" supertip="#FF977D | RGB 255, 151, 125 | Color 16 | Shade 03" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
             </box>
             <box id="row16_2" boxStyle="horizontal">
-              <toggleButton id="btn16_04" image="c16_04" showLabel="false" tag="243,114,83" screentip="Coral — Soft" supertip="#F37253 | RGB 243, 114, 83 | Color 16 | Shade 04" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn16_05" image="c16_05" showLabel="false" tag="219,85,52" screentip="Coral — Medium" supertip="#DB5534 | RGB 219, 85, 52 | Color 16 | Shade 05" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn16_06" image="c16_06" showLabel="false" tag="189,61,27" screentip="Coral — Rich" supertip="#BD3D1B | RGB 189, 61, 27 | Color 16 | Shade 06" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
+              <toggleButton id="btn16_04" image="c16_04" showLabel="false" tag="243,114,83" screentip="Coral — Soft" supertip="#F37253 | RGB 243, 114, 83 | Color 16 | Shade 04" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn16_05" image="c16_05" showLabel="false" tag="219,85,52" screentip="Coral — Medium" supertip="#DB5534 | RGB 219, 85, 52 | Color 16 | Shade 05" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn16_06" image="c16_06" showLabel="false" tag="189,61,27" screentip="Coral — Rich" supertip="#BD3D1B | RGB 189, 61, 27 | Color 16 | Shade 06" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
             </box>
             <box id="row16_3" boxStyle="horizontal">
-              <toggleButton id="btn16_07" image="c16_07" showLabel="false" tag="156,42,9" screentip="Coral — Deep" supertip="#9C2A09 | RGB 156, 42, 9 | Color 16 | Shade 07" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn16_08" image="c16_08" showLabel="false" tag="121,27,0" screentip="Coral — Dark" supertip="#791B00 | RGB 121, 27, 0 | Color 16 | Shade 08" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn16_09" image="c16_09" showLabel="false" tag="87,16,0" screentip="Coral — Darkest" supertip="#571000 | RGB 87, 16, 0 | Color 16 | Shade 09" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
+              <toggleButton id="btn16_07" image="c16_07" showLabel="false" tag="156,42,9" screentip="Coral — Deep" supertip="#9C2A09 | RGB 156, 42, 9 | Color 16 | Shade 07" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn16_08" image="c16_08" showLabel="false" tag="121,27,0" screentip="Coral — Dark" supertip="#791B00 | RGB 121, 27, 0 | Color 16 | Shade 08" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn16_09" image="c16_09" showLabel="false" tag="87,16,0" screentip="Coral — Darkest" supertip="#571000 | RGB 87, 16, 0 | Color 16 | Shade 09" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
             </box>
           </box>
         </group>
         <group id="grp17">
           <box id="grid17" boxStyle="vertical">
             <box id="row17_1" boxStyle="horizontal">
-              <toggleButton id="btn17_01" image="c17_01" showLabel="false" tag="255,230,213" screentip="Orange — Lightest" supertip="#FFE6D5 | RGB 255, 230, 213 | Color 17 | Shade 01" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn17_02" image="c17_02" showLabel="false" tag="255,194,153" screentip="Orange — Very Light" supertip="#FFC299 | RGB 255, 194, 153 | Color 17 | Shade 02" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn17_03" image="c17_03" showLabel="false" tag="253,156,84" screentip="Orange — Light" supertip="#FD9C54 | RGB 253, 156, 84 | Color 17 | Shade 03" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
+              <toggleButton id="btn17_01" image="c17_01" showLabel="false" tag="255,230,213" screentip="Orange — Lightest" supertip="#FFE6D5 | RGB 255, 230, 213 | Color 17 | Shade 01" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn17_02" image="c17_02" showLabel="false" tag="255,194,153" screentip="Orange — Very Light" supertip="#FFC299 | RGB 255, 194, 153 | Color 17 | Shade 02" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn17_03" image="c17_03" showLabel="false" tag="253,156,84" screentip="Orange — Light" supertip="#FD9C54 | RGB 253, 156, 84 | Color 17 | Shade 03" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
             </box>
             <box id="row17_2" boxStyle="horizontal">
-              <toggleButton id="btn17_04" image="c17_04" showLabel="false" tag="234,125,28" screentip="Orange — Soft" supertip="#EA7D1C | RGB 234, 125, 28 | Color 17 | Shade 04" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn17_05" image="c17_05" showLabel="false" tag="202,104,0" screentip="Orange — Medium" supertip="#CA6800 | RGB 202, 104, 0 | Color 17 | Shade 05" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn17_06" image="c17_06" showLabel="false" tag="168,85,0" screentip="Orange — Rich" supertip="#A85500 | RGB 168, 85, 0 | Color 17 | Shade 06" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
+              <toggleButton id="btn17_04" image="c17_04" showLabel="false" tag="234,125,28" screentip="Orange — Soft" supertip="#EA7D1C | RGB 234, 125, 28 | Color 17 | Shade 04" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn17_05" image="c17_05" showLabel="false" tag="202,104,0" screentip="Orange — Medium" supertip="#CA6800 | RGB 202, 104, 0 | Color 17 | Shade 05" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn17_06" image="c17_06" showLabel="false" tag="168,85,0" screentip="Orange — Rich" supertip="#A85500 | RGB 168, 85, 0 | Color 17 | Shade 06" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
             </box>
             <box id="row17_3" boxStyle="horizontal">
-              <toggleButton id="btn17_07" image="c17_07" showLabel="false" tag="135,67,0" screentip="Orange — Deep" supertip="#874300 | RGB 135, 67, 0 | Color 17 | Shade 07" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn17_08" image="c17_08" showLabel="false" tag="103,50,0" screentip="Orange — Dark" supertip="#673200 | RGB 103, 50, 0 | Color 17 | Shade 08" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn17_09" image="c17_09" showLabel="false" tag="73,34,0" screentip="Orange — Darkest" supertip="#492200 | RGB 73, 34, 0 | Color 17 | Shade 09" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
+              <toggleButton id="btn17_07" image="c17_07" showLabel="false" tag="135,67,0" screentip="Orange — Deep" supertip="#874300 | RGB 135, 67, 0 | Color 17 | Shade 07" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn17_08" image="c17_08" showLabel="false" tag="103,50,0" screentip="Orange — Dark" supertip="#673200 | RGB 103, 50, 0 | Color 17 | Shade 08" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn17_09" image="c17_09" showLabel="false" tag="73,34,0" screentip="Orange — Darkest" supertip="#492200 | RGB 73, 34, 0 | Color 17 | Shade 09" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
             </box>
           </box>
         </group>
         <group id="grp18">
           <box id="grid18" boxStyle="vertical">
             <box id="row18_1" boxStyle="horizontal">
-              <toggleButton id="btn18_01" image="c18_01" showLabel="false" tag="255,231,200" screentip="Amber — Lightest" supertip="#FFE7C8 | RGB 255, 231, 200 | Color 18 | Shade 01" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn18_02" image="c18_02" showLabel="false" tag="253,198,120" screentip="Amber — Very Light" supertip="#FDC678 | RGB 253, 198, 120 | Color 18 | Shade 02" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn18_03" image="c18_03" showLabel="false" tag="237,168,57" screentip="Amber — Light" supertip="#EDA839 | RGB 237, 168, 57 | Color 18 | Shade 03" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
+              <toggleButton id="btn18_01" image="c18_01" showLabel="false" tag="255,231,200" screentip="Amber — Lightest" supertip="#FFE7C8 | RGB 255, 231, 200 | Color 18 | Shade 01" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn18_02" image="c18_02" showLabel="false" tag="253,198,120" screentip="Amber — Very Light" supertip="#FDC678 | RGB 253, 198, 120 | Color 18 | Shade 02" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn18_03" image="c18_03" showLabel="false" tag="237,168,57" screentip="Amber — Light" supertip="#EDA839 | RGB 237, 168, 57 | Color 18 | Shade 03" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
             </box>
             <box id="row18_2" boxStyle="horizontal">
-              <toggleButton id="btn18_04" image="c18_04" showLabel="false" tag="211,143,0" screentip="Amber — Soft" supertip="#D38F00 | RGB 211, 143, 0 | Color 18 | Shade 04" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn18_05" image="c18_05" showLabel="false" tag="179,121,0" screentip="Amber — Medium" supertip="#B37900 | RGB 179, 121, 0 | Color 18 | Shade 05" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn18_06" image="c18_06" showLabel="false" tag="149,99,0" screentip="Amber — Rich" supertip="#956300 | RGB 149, 99, 0 | Color 18 | Shade 06" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
+              <toggleButton id="btn18_04" image="c18_04" showLabel="false" tag="211,143,0" screentip="Amber — Soft" supertip="#D38F00 | RGB 211, 143, 0 | Color 18 | Shade 04" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn18_05" image="c18_05" showLabel="false" tag="179,121,0" screentip="Amber — Medium" supertip="#B37900 | RGB 179, 121, 0 | Color 18 | Shade 05" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn18_06" image="c18_06" showLabel="false" tag="149,99,0" screentip="Amber — Rich" supertip="#956300 | RGB 149, 99, 0 | Color 18 | Shade 06" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
             </box>
             <box id="row18_3" boxStyle="horizontal">
-              <toggleButton id="btn18_07" image="c18_07" showLabel="false" tag="119,79,0" screentip="Amber — Deep" supertip="#774F00 | RGB 119, 79, 0 | Color 18 | Shade 07" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn18_08" image="c18_08" showLabel="false" tag="91,59,0" screentip="Amber — Dark" supertip="#5B3B00 | RGB 91, 59, 0 | Color 18 | Shade 08" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
-              <toggleButton id="btn18_09" image="c18_09" showLabel="false" tag="64,40,0" screentip="Amber — Darkest" supertip="#402800 | RGB 64, 40, 0 | Color 18 | Shade 09" getPressed="Ribbon_GetPressed" onAction="Ribbon_Color"/>
+              <toggleButton id="btn18_07" image="c18_07" showLabel="false" tag="119,79,0" screentip="Amber — Deep" supertip="#774F00 | RGB 119, 79, 0 | Color 18 | Shade 07" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn18_08" image="c18_08" showLabel="false" tag="91,59,0" screentip="Amber — Dark" supertip="#5B3B00 | RGB 91, 59, 0 | Color 18 | Shade 08" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
+              <toggleButton id="btn18_09" image="c18_09" showLabel="false" tag="64,40,0" screentip="Amber — Darkest" supertip="#402800 | RGB 64, 40, 0 | Color 18 | Shade 09" getPressed="PaletteHighlighter_GetPressed" onAction="PaletteHighlighter_Color"/>
             </box>
           </box>
         </group>
         <group id="grpUtility">
-          <button id="btnLast" label="Last used" size="large" screentip="Apply last used color" getImage="Ribbon_GetLastImage" getEnabled="Ribbon_GetLastEnabled" onAction="Ribbon_ApplyLast"/>
-          <button id="btnRemove" imageMso="ClearFormatting" size="large" showLabel="false" onAction="Ribbon_Remove"/>
+          <button id="btnLast" label="Last used" size="large" screentip="Apply last used color" getImage="PaletteHighlighter_GetLastImage" getEnabled="PaletteHighlighter_GetLastEnabled" onAction="PaletteHighlighter_ApplyLast"/>
+          <button id="btnRemove" imageMso="ClearFormatting" size="large" showLabel="false" onAction="PaletteHighlighter_Remove"/>
         </group>
       </tab>
     </tabs>

@@ -8,13 +8,16 @@ Private Const SWATCH_SIZE As Long = 32
 
 Private highlighterRibbon As IRibbonUI
 
-Public Sub Ribbon_Load(ribbon As IRibbonUI)
+' Word resolves Ribbon callbacks by name across every loaded project,
+' including Normal.dotm, so all callbacks carry a prefix unique to this add-in.
+
+Public Sub PaletteHighlighter_Load(ribbon As IRibbonUI)
     Set highlighterRibbon = ribbon
 End Sub
 
 ' Generic Ribbon callback for all 81 swatches.
 ' Each RibbonX toggle button stores only its RGB triplet in control.Tag.
-Public Sub Ribbon_Color(control As IRibbonControl, pressed As Boolean)
+Public Sub PaletteHighlighter_Color(control As IRibbonControl, pressed As Boolean)
     If ApplyTag(control.Tag) Then
         SaveSetting SETTINGS_APP, SETTINGS_SECTION, "Id", control.Id
         SaveSetting SETTINGS_APP, SETTINGS_SECTION, "Tag", control.Tag
@@ -24,21 +27,21 @@ Public Sub Ribbon_Color(control As IRibbonControl, pressed As Boolean)
     If Not highlighterRibbon Is Nothing Then highlighterRibbon.Invalidate
 End Sub
 
-Public Sub Ribbon_GetPressed(control As IRibbonControl, ByRef returnedVal)
+Public Sub PaletteHighlighter_GetPressed(control As IRibbonControl, ByRef returnedVal)
     returnedVal = (control.Id = GetSetting(SETTINGS_APP, SETTINGS_SECTION, "Id", ""))
 End Sub
 
-Public Sub Ribbon_ApplyLast(control As IRibbonControl)
+Public Sub PaletteHighlighter_ApplyLast(control As IRibbonControl)
     ApplyTag GetSetting(SETTINGS_APP, SETTINGS_SECTION, "Tag", "")
 End Sub
 
-Public Sub Ribbon_GetLastEnabled(control As IRibbonControl, ByRef returnedVal)
+Public Sub PaletteHighlighter_GetLastEnabled(control As IRibbonControl, ByRef returnedVal)
     Dim r As Long, g As Long, b As Long
 
     returnedVal = ParseTag(GetSetting(SETTINGS_APP, SETTINGS_SECTION, "Tag", ""), r, g, b)
 End Sub
 
-Public Sub Ribbon_GetLastImage(control As IRibbonControl, ByRef returnedVal)
+Public Sub PaletteHighlighter_GetLastImage(control As IRibbonControl, ByRef returnedVal)
     Dim r As Long, g As Long, b As Long
 
     If Not ParseTag(GetSetting(SETTINGS_APP, SETTINGS_SECTION, "Tag", ""), r, g, b) Then
@@ -50,7 +53,7 @@ Public Sub Ribbon_GetLastImage(control As IRibbonControl, ByRef returnedVal)
     Set returnedVal = SwatchPicture(r, g, b)
 End Sub
 
-Public Sub Ribbon_Remove(control As IRibbonControl)
+Public Sub PaletteHighlighter_Remove(control As IRibbonControl)
     RemoveCustomHighlight
 End Sub
 
