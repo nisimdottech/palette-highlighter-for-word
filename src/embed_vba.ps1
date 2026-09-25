@@ -46,7 +46,7 @@ try {
     foreach ($component in $document.VBProject.VBComponents) {
         $lines = $component.CodeModule.CountOfLines
         if ($component.Name -ne $ModuleName -and $lines -gt 0 -and
-            $component.CodeModule.Lines(1, $lines) -match "Sub Ribbon_") {
+            $component.CodeModule.Lines(1, $lines) -match "Sub PaletteHighlighter_") {
             throw "Ribbon callbacks also exist in $($component.Name); they would be ambiguous."
         }
     }
@@ -61,13 +61,17 @@ try {
 }
 finally {
     try {
+        # Close and Quit take ByRef arguments that Windows PowerShell cannot pass
+        # positionally, so discard changes by marking everything saved instead.
         if ($document) {
-            $document.Close(0)
+            $document.Saved = $true
+            $document.Close()
             [Runtime.InteropServices.Marshal]::ReleaseComObject($document) | Out-Null
         }
         if ($word) {
             if ($ownsWord) {
-                $word.Quit(0)
+                $word.NormalTemplate.Saved = $true
+                $word.Quit()
             }
             [Runtime.InteropServices.Marshal]::ReleaseComObject($word) | Out-Null
         }
