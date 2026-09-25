@@ -151,6 +151,8 @@ def remove_legacy_install() -> None:
     if legacy.exists():
         backup_existing(legacy)
         legacy.unlink()
+    # Word's hidden owner file replaces the first two characters with "~$".
+    (startup_dir() / f"~${legacy.name[2:]}").unlink(missing_ok=True)
     try:
         winreg.DeleteKey(winreg.HKEY_CURRENT_USER, rf"{UNINSTALL_ROOT}\{LEGACY_ID}")
     except FileNotFoundError:
