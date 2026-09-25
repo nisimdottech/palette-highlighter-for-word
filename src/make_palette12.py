@@ -130,6 +130,7 @@ def main() -> None:
                 (icon_dir / f"{image_id}.png").write_bytes(png_rgb(16, 16, rgb))
                 palette_rows[(shade_index - 1) // 3].append(button)
 
+        palette.set("label", color_name)
         palette_groups.append(palette)
 
     for group in list(tab.findall(NS + "group")):

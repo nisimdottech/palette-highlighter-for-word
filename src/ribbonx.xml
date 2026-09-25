@@ -345,7 +345,7 @@
           </box>
         </group>
         <group id="grpUtility">
-          <button id="btnRemove" imageMso="ClearFormatting" size="large" showLabel="false" onAction="PaletteHighlighter_Remove"/>
+          <button id="btnRemove" imageMso="ClearFormatting" size="large" label="Remove Highlight" onAction="PaletteHighlighter_Remove"/>
         </group>
       </tab>
     </tabs>
