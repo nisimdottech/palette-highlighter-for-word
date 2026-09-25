@@ -4,7 +4,6 @@
 ' survives Word restarts.
 Private Const SETTINGS_APP As String = "PaletteHighlighterForWord"
 Private Const SETTINGS_SECTION As String = "LastUsed"
-Private Const SWATCH_SIZE As Long = 32
 
 Private highlighterRibbon As IRibbonUI
 
@@ -20,7 +19,6 @@ End Sub
 Public Sub PaletteHighlighter_Color(control As IRibbonControl, pressed As Boolean)
     If ApplyTag(control.Tag) Then
         SaveSetting SETTINGS_APP, SETTINGS_SECTION, "Id", control.Id
-        SaveSetting SETTINGS_APP, SETTINGS_SECTION, "Tag", control.Tag
     End If
 
     ' Clicking a toggle flips its pressed state, so always resync the Ribbon.
@@ -29,28 +27,6 @@ End Sub
 
 Public Sub PaletteHighlighter_GetPressed(control As IRibbonControl, ByRef returnedVal)
     returnedVal = (control.Id = GetSetting(SETTINGS_APP, SETTINGS_SECTION, "Id", ""))
-End Sub
-
-Public Sub PaletteHighlighter_ApplyLast(control As IRibbonControl)
-    ApplyTag GetSetting(SETTINGS_APP, SETTINGS_SECTION, "Tag", "")
-End Sub
-
-Public Sub PaletteHighlighter_GetLastEnabled(control As IRibbonControl, ByRef returnedVal)
-    Dim r As Long, g As Long, b As Long
-
-    returnedVal = ParseTag(GetSetting(SETTINGS_APP, SETTINGS_SECTION, "Tag", ""), r, g, b)
-End Sub
-
-Public Sub PaletteHighlighter_GetLastImage(control As IRibbonControl, ByRef returnedVal)
-    Dim r As Long, g As Long, b As Long
-
-    If Not ParseTag(GetSetting(SETTINGS_APP, SETTINGS_SECTION, "Tag", ""), r, g, b) Then
-        r = 255
-        g = 255
-        b = 255
-    End If
-
-    Set returnedVal = SwatchPicture(r, g, b)
 End Sub
 
 Public Sub PaletteHighlighter_Remove(control As IRibbonControl)
@@ -82,63 +58,6 @@ Private Function ParseTag(ByVal tag As String, ByRef r As Long, ByRef g As Long,
     b = CLng(parts(2))
     ParseTag = True
 End Function
-
-' Ribbon images must be IPictureDisp objects, and LoadPicture only reads
-' files, so the swatch is written as a temporary 24-bit BMP with a gray border.
-Private Function SwatchPicture(ByVal r As Long, ByVal g As Long, ByVal b As Long) As IPictureDisp
-    Const HEADER_SIZE As Long = 54
-    Dim data() As Byte
-    Dim imageSize As Long
-    Dim x As Long, y As Long, offset As Long
-    Dim path As String
-    Dim fileNumber As Integer
-
-    imageSize = SWATCH_SIZE * SWATCH_SIZE * 3
-    ReDim data(0 To HEADER_SIZE + imageSize - 1)
-
-    data(0) = Asc("B")
-    data(1) = Asc("M")
-    PutLong data, 2, HEADER_SIZE + imageSize
-    PutLong data, 10, HEADER_SIZE
-    PutLong data, 14, 40
-    PutLong data, 18, SWATCH_SIZE
-    PutLong data, 22, SWATCH_SIZE
-    data(26) = 1
-    data(28) = 24
-    PutLong data, 34, imageSize
-
-    offset = HEADER_SIZE
-    For y = 0 To SWATCH_SIZE - 1
-        For x = 0 To SWATCH_SIZE - 1
-            If x = 0 Or y = 0 Or x = SWATCH_SIZE - 1 Or y = SWATCH_SIZE - 1 Then
-                data(offset) = 128
-                data(offset + 1) = 128
-                data(offset + 2) = 128
-            Else
-                data(offset) = b
-                data(offset + 1) = g
-                data(offset + 2) = r
-            End If
-            offset = offset + 3
-        Next x
-    Next y
-
-    path = Environ$("TEMP") & "\PaletteHighlighterForWord_last.bmp"
-    fileNumber = FreeFile
-    Open path For Binary Access Write As #fileNumber
-    Put #fileNumber, 1, data
-    Close #fileNumber
-
-    Set SwatchPicture = LoadPicture(path)
-    Kill path
-End Function
-
-Private Sub PutLong(ByRef data() As Byte, ByVal offset As Long, ByVal value As Long)
-    data(offset) = value And &HFF&
-    data(offset + 1) = (value \ &H100&) And &HFF&
-    data(offset + 2) = (value \ &H10000) And &HFF&
-    data(offset + 3) = (value \ &H1000000) And &HFF&
-End Sub
 
 Private Sub ApplyCustomHighlight(ByVal r As Long, ByVal g As Long, ByVal b As Long)
     Dim foregroundColor As Long

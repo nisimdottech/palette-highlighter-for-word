@@ -345,7 +345,6 @@
           </box>
         </group>
         <group id="grpUtility">
-          <button id="btnLast" label="Last used" size="large" screentip="Apply last used color" getImage="PaletteHighlighter_GetLastImage" getEnabled="PaletteHighlighter_GetLastEnabled" onAction="PaletteHighlighter_ApplyLast"/>
           <button id="btnRemove" imageMso="ClearFormatting" size="large" showLabel="false" onAction="PaletteHighlighter_Remove"/>
         </group>
       </tab>

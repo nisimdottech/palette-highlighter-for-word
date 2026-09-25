@@ -16,8 +16,8 @@ readable.
 - **9 shades per hue,** from Lightest to Darkest, at matching lightness across
   hues.
 - **Last used color:** the swatch you used last stays pressed in the palette,
-  and the large **Last used** button shows it and reapplies it in one click. The
-  choice is remembered across Word sessions.
+  so you can see which color you picked. The choice is remembered across Word
+  sessions.
 - **Remove:** clears the shading and restores the automatic text color.
 - Hover over a swatch to see its name, hex code, and RGB value.
 
