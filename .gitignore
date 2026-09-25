@@ -1,0 +1,20 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Word lock files and installer backups
+~$*
+*.bak
+
+# Third-party tool installers; download them from upstream (see README)
+tools/
+
+# Editor settings
+.zed/
