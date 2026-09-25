@@ -30,7 +30,7 @@ SHADE_NAMES = (
 # are closer than any other pair.
 SOURCE_GROUPS = (
     "grp01",  # Yellow, 95
-    "grp03",  # Yellow Green, 135
+    "grp03",  # Yellow Green, 135 (shown as Lime)
     "grp05",  # Emerald, 175
     "grp07",  # Cyan, 215
     "grp09",  # Blue, 255
@@ -39,6 +39,12 @@ SOURCE_GROUPS = (
     "grp15",  # Red, 15
     "grp17",  # Orange, 55
 )
+
+# One-word names fit under a single 3x3 group; the source family called
+# Lime (grp02) is not part of the palette.
+DISPLAY_NAMES = {
+    "grp03": "Lime",
+}
 
 
 def png_rgb(width: int, height: int, rgb: tuple[int, int, int]) -> bytes:
@@ -112,8 +118,10 @@ def main() -> None:
                 source_shade_index = (row_index - 1) * 3 + column_index
                 shade_index = source_shade_index
                 button = copy.deepcopy(button)
+                source_name, shade_name = button.attrib["screentip"].split(" — ", 1)
                 if not color_name:
-                    color_name = button.attrib["screentip"].split(" — ", 1)[0]
+                    color_name = DISPLAY_NAMES.get(source_group_id, source_name)
+                button.attrib["screentip"] = f"{color_name} — {shade_name}"
                 rgb = tuple(int(part) for part in button.attrib["tag"].split(","))
                 image_id = f"{slug(color_name)}_{SHADE_NAMES[shade_index - 1]}"
                 button.attrib["id"] = f"btn{new_color_index:02d}_{shade_index:02d}"

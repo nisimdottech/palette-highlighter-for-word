@@ -10,9 +10,9 @@ readable.
 
 ## Features
 
-- **9 evenly spaced hues:** Yellow, Yellow Green, Emerald, Cyan, Blue, Violet,
-  Magenta, Red, Orange. They are 40° apart in OKLCH hue, so no two neighboring
-  hues look alike.
+- **9 evenly spaced hues:** Yellow, Lime, Emerald, Cyan, Blue, Violet, Magenta,
+  Red, Orange. They are 40° apart in OKLCH hue, so no two neighboring hues look
+  alike. Each hue's name appears under its swatches.
 - **9 shades per hue,** from Lightest to Darkest, at matching lightness across
   hues.
 - **Last used color:** the swatch you used last stays pressed in the palette,
