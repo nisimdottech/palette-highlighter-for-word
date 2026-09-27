@@ -1,7 +1,7 @@
 # Palette Highlighter for Word
 
 A Microsoft Word add-in that adds a **Highlighter** tab to the ribbon with 81
-highlight colors: 9 hues × 9 shades, from very light to very dark.
+highlight colors: 8 hues plus gray, each in 9 shades from light to dark.
 
 Word's built-in highlighter offers only a handful of saturated colors. This
 add-in applies any palette color as text shading and automatically switches the
@@ -10,11 +10,15 @@ readable.
 
 ## Features
 
-- **9 evenly spaced hues:** Yellow, Lime, Emerald, Cyan, Blue, Violet, Magenta,
-  Red, Orange. They are 40° apart in OKLCH hue, so no two neighboring hues look
-  alike. Each hue's name appears under its swatches.
-- **9 shades per hue,** from Lightest to Darkest, at matching lightness across
-  hues.
+- **8 familiar hues plus gray:** Red, Orange, Yellow, Green, Teal, Blue,
+  Purple, Pink, and Gray. The names are the most widely known English color
+  words, and each hue is placed near the typical color for its name while
+  keeping the swatches of different colors as far apart as possible. Each
+  color's name appears under its swatches.
+- **9 shades per color,** from Lightest to Darkest, at matching lightness across
+  the 8 hues. The lightness range is chosen so that even the lightest and
+  darkest shades of neighboring colors stay distinguishable. Gray uses its own
+  ladder running all the way from white to black.
 - **Last used color:** the swatch you used last stays pressed in the palette,
   so you can see which color you picked. The choice is remembered across Word
   sessions.
@@ -72,7 +76,7 @@ The build has three steps:
    only allows this when **Trust access to the VBA project object model** is
    on, so the script enables that setting for the current user during the run
    and restores the previous value afterwards.
-2. `src\assemble_template.py` generates the 9 × 9 palette ribbon and icons
+2. `src\assemble_template.py` generates the palette ribbon and icons
    from `src\ribbonx.xml` (via `src\make_palette12.py`) and inserts them into
    the template with the Office RibbonX Editor command-line tool.
 3. PyInstaller bundles the template and `src\installer.py` into a single
@@ -83,8 +87,8 @@ The build has three steps:
 | Path | Purpose |
 | --- | --- |
 | `src/VBA.bas` | Ribbon callbacks: apply, remove, last used color |
-| `src/ribbonx.xml` | Source ribbon with all 18 candidate hue families |
-| `src/make_palette12.py` | Selects the 9 hues and generates ribbon XML and icons |
+| `src/ribbonx.xml` | Ribbon tab and the Remove Highlight button |
+| `src/make_palette12.py` | Defines the 9 colors, computes their shades in OKLCH, and generates the color groups and icons |
 | `src/base_template.dotm` | Word-authored template that holds the VBA project |
 | `src/embed_vba.ps1` | Embeds `VBA.bas` into the template via Word |
 | `src/assemble_template.py` | Builds the final `.dotm` |

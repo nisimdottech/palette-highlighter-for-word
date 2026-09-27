@@ -5,6 +5,12 @@
 Private Const SETTINGS_APP As String = "PaletteHighlighterForWord"
 Private Const SETTINGS_SECTION As String = "LastUsed"
 
+' Requires black to win by a clear margin, not just a hair, because green and
+' teal backgrounds land close enough to the crossover point that black barely
+' wins on paper but reads worse in practice; white is the safer default when
+' the two are close.
+Private Const BLACK_CONTRAST_MARGIN As Double = 1.1
+
 Private highlighterRibbon As IRibbonUI
 
 ' Word resolves Ribbon callbacks by name across every loaded project,
@@ -123,7 +129,7 @@ Private Function BestForegroundColor(ByVal r As Long, ByVal g As Long, ByVal b A
     blackContrast = ContrastWithBlack(luminance)
     whiteContrast = ContrastWithWhite(luminance)
 
-    If blackContrast >= whiteContrast Then
+    If blackContrast >= whiteContrast * BLACK_CONTRAST_MARGIN Then
         BestForegroundColor = wdColorBlack
     Else
         BestForegroundColor = wdColorWhite
